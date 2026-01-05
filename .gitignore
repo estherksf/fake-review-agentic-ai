@@ -1,3 +1,52 @@
+# --- Data (never commit raw datasets) ---
+data/
+datasets/
+raw_data/
+processed_data/
+*.csv
+*.tsv
+*.parquet
+*.jsonl
+*.pkl
+*.pickle
+*.joblib
+
+# --- Models / checkpoints ---
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# --- Experiment tracking outputs ---
+runs/
+logs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+*.log
+
+# --- Jupyter / notebooks ---
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# --- Secrets / local config ---
+.env
+.env.*
+*.key
+*.pem
+*.token
+config.local.*
+secrets/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+.vscode/*.log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
